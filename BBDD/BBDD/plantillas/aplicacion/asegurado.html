@@ -1,0 +1,10 @@
+{% if listado_asegurados %}
+<h1>Listado de asegurados</h1>
+    <ul>
+    {% for ase in listado_asegurados%}
+        <li><a href="/aplicacion/asegurado.html"><b>{{ase.nombre}}</b></a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No hay asegurados disponibles.</p>
+{% endif %}

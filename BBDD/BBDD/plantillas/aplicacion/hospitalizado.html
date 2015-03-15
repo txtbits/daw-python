@@ -1,0 +1,10 @@
+{% if listado_hospitalizaciones %}
+<h1>Listado de Hospitalizados</h1>
+    <ul>
+    {% for hosp in listado_hospitalizaciones %}
+        <li><a href="/aplicacion/hospitalizado.html"><b>{{hosp.asegurado}}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No hay hospitalizados ingresados.</p>
+{% endif %}

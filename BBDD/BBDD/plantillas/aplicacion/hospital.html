@@ -1,0 +1,12 @@
+<h1>Hospitales</h1>
+
+{% if listado_hospitales %}
+<h1>Listado de hospitales </h1>
+    <ul>
+    {% for hos in listado_hospitales%}
+        <li><a href="/aplicacion/hospital.html"><b>{{ hos.nombre}} </b> [Camas: {{hos.camas}} ] </a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No hay hospitales disponibles.</p>
+{% endif %}

@@ -1,0 +1,10 @@
+{% if listado_telefonos %}
+<h1>Listado de telefonos de medicos</h1>
+    <ul>
+    {% for tel in listado_telefonos%}
+        <li><a href="/aplicacion/telfmedico.html"><b>{{tel.medico}}</b> [<b>{{tel.telefono}}</b>]</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No hay telefonos disponibles</p>
+{% endif %}

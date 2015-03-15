@@ -1,0 +1,10 @@
+{% if listado_medicos %}
+<h1>Listado de medicos</h1>
+    <ul>
+    {% for med in listado_medicos %}
+        <li><a href="/aplicacion/medico.html"><b>{{med.nombre}} </b> [{{med.hospital}} ] </a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No hay medicos disponibles.</p>
+{% endif %}

@@ -1,0 +1,10 @@
+{% if listado_ultimas %}
+<h1>Listado de encuestas </h1>
+    <ul>
+    {% for encuesta in listado_ultimas %}
+        <li><a href="/encuestas/{{ encuesta.id}}/">{{ encuesta.pregunta }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No hay encuestas disponibles.</p>
+{% endif %}

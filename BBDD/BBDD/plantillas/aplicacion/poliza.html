@@ -1,0 +1,10 @@
+{% if listado_polizas %}
+<h1>Listado de polizas</h1>
+    <ul>
+    {% for pol in listado_polizas %}
+        <li><a href="/aplicacion/poliza.html"><b>{{pol.datos}}</b></a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No hay polizas disponibles</p>
+{% endif %}
