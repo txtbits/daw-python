@@ -1,3 +1,18 @@
+# Eclipse specific #
+*.pydevproject
+.metadata
+.gradle
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.project
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
